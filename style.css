@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Zain", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 900px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    display: flex;
+    color: #002765;
+    align-items: center;
+    margin: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.todo-app h2 i{
+    color: #002765;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+input{
+    width: 60%;
+    height: 60px;
+    margin-right: 12%;
+    margin-top: 5%;
+    font-size: 20px;
+    background-color: rgba(105, 105, 105, 0.105);
+    border: none;
+    border-radius: 10px;
+    padding-right: 8px;
+}
+
+button{
+    height: 60px;
+    width: 14%;
+    border-radius: 10px;
+    background: #ff5945;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-right: 13%;
+    user-select: none;
+    
+    padding-top: 10px;
+}
+
+ul li::before{
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 103%;
+    top: 37%;
+    content: "";
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.203);
+    cursor: pointer;
+} 
+
+/* ul li::after{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 34%;
+    right: 85%;
+    content: "";
+    border-radius: 50%;
+    background-image: url(/ضربدر-قرمز.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+} */
+
+
+.checked{
+    text-decoration: line-through;
+    color: #55555571;
+}
+
+ul li.checked::before{
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 103%;
+    top: 37%;
+    content: "";
+    background-image: url(/tickpng.parspng.com-2-300x300.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+
+
+ul li span{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 34%;
+    right: 85%;
+    content: "";
+    border-radius: 50%;
+    background-image: url(/ضربدر-قرمز.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
